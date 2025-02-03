@@ -46,10 +46,11 @@ const Searchbar = () => {
             {selectedHero && (
                 <div className="hero-details" style={{ marginTop: '20px' , textAlign: 'center' , backgroundColor: 'gray' , padding: '20px' , borderRadius: '10px' }}>
                     <h2>{selectedHero.name}</h2>
-                    <p>Full Name: {selectedHero.biography['full-name']}</p>
+                    <p>Nom complet: {selectedHero.biography['full-name']}</p>
                     <p>Publisher: {selectedHero.biography.publisher}</p>
-                    <p>First Appearance: {selectedHero.biography['first-appearance']}</p>
-                    <p>Alignment: {selectedHero.biography.alignment}</p>
+                    <p>Première Apparition: {selectedHero.biography['first-appearance']}</p>
+                    <p>Alignement: {selectedHero.biography.alignment}</p>
+                    <p>Occupation: {selectedHero.work.occupation}</p>
                     <img src={selectedHero.image.url} alt={selectedHero.name} className="hero-image-large" />
                 </div>
             )}
