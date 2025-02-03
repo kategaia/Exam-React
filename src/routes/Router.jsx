@@ -1,5 +1,5 @@
 import {Routes, Route} from "react-router";
-import Home from "../components/Home/home";
+import Home from "../pages/Home";
 import FetchHeros from "../components/FetchHeors/fetchHeros";
 import { AuthProvider } from "../auth/AuthProvider";
 import PrivateRoute from "../auth/PrivateRoute";
