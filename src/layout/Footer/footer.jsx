@@ -6,7 +6,7 @@ export default function Footer() {
         <a href="#">Conditions d&apos;utilisation</a>
         <a href="#">Politique de confidentialité</a>
         <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+        <a href="/Contact">Contact</a>
     </div>
   );
 }

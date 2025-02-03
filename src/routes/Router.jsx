@@ -3,6 +3,8 @@ import Home from "../pages/HOme";
 import FetchHeros from "../components/FetchHeors/fetchHeros";
 import { AuthProvider } from "../auth/AuthProvider";
 import PrivateRoute from "../auth/PrivateRoute";
+import NotFound from "../components/404/404";
+import Contact from "../components/Contact/contact";
 
 export default function Router() {
     return (
@@ -14,6 +16,8 @@ export default function Router() {
                     <FetchHeros />
                     </PrivateRoute>
                 } />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="*" element={<NotFound />} />
             </Routes>
         </AuthProvider>
     )

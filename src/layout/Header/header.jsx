@@ -12,15 +12,16 @@ export default function Header() {
     navigate(-1);
   };
 return (
-    <div className="header">
-        <h1>La Galerie des Héros</h1>
-        {displayName !== "Accueil" && (
-            <a onClick={handleGoBack} style={{ cursor: "pointer", display: "flex", alignItems: "left" }}>
+    <div>
+        <div className="header">
+            {displayName !== "Accueil" && (
+                <a onClick={handleGoBack} style={{ cursor: "pointer", display: "flex", alignItems: "left" }}>
                     <img src="./super-hero-patriot-man-opening-his-shirt.webp" alt="Lyre Skyward Sword" style={{ width: "50px", height: "50px" }} />
-            </a>
-        )}
-        <h2 className="header__title">{displayName}</h2>
-        <h3>Bienvenue</h3>
+                </a>
+            )} <h2>La Galerie des Héros</h2>
+        </div>
+        <h1 className="header__title">{displayName}</h1>
+        <h3>Bienvenue sur la page {displayName}</h3>
     </div>
 );
 }
